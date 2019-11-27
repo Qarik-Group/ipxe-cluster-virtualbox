@@ -14,6 +14,7 @@ for i in $(seq 1 ${count}); do
                --nic1 bridged --nictype1 82545EM \
                --bridgeadapter1 'en0: Wi-Fi (AirPort)' \
                --boot1 dvd --boot2 disk --boot3 none --boot4 none \
+               --acpi off
     VBoxManage createmedium disk \
                --filename "${disk}" --size 10000 --format VDI
     VBoxManage storagectl ${name} \
