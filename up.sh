@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wget -c https://boot.ipxe.org/ipxe.iso
+[[ -f ipxe.iso ]] || { wget -c https://boot.ipxe.org/ipxe.iso; }
 
 count=${1-1}
 
