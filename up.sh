@@ -11,7 +11,7 @@ for i in $(seq 1 ${count}); do
                --ostype Linux_64 --register
     VBoxManage modifyvm ${name} \
                --memory 2056 \
-               --nic1 bridged --nictype1 82540EM \
+               --nic1 bridged --nictype1 82545EM \
                --bridgeadapter1 'en0: Wi-Fi (AirPort)' \
                --boot1 dvd --boot2 none --boot3 none --boot4 none
     VBoxManage createmedium disk \
